@@ -45,7 +45,7 @@ export default {
   left: 0;
   font-size: 1.5rem;
   height: 100%;
-  background: url("../../static/img/fmcover.jpg");
+  background: url("https://img.alicdn.com/imgextra/i1/790237325/O1CN016XDOHK23ytmGbVGEM_!!790237325.jpg?t=1587200350000");
   background-size: 100% 100%;
   .text_box {
     position: absolute;
@@ -63,7 +63,7 @@ export default {
     font-weight: 800;
     color: #2c3e5036;
     line-height: 1.1;
-    background: url("../../static/img/water.png");
+    background: url("https://img.alicdn.com/imgextra/i4/790237325/O1CN01kpk1pG23ytmCJ9aF1_!!790237325.png?t=1587200371000");
     -webkit-background-clip: text;
     background-position: 0 18%;
     animation: water 12s infinite;

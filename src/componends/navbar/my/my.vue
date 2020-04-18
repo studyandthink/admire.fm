@@ -3,7 +3,7 @@
     <div class="user_info">
       <div class="name_box">
         <div class="user_img">
-          <img src="../../../static/img/yinoduo.jpg" />
+          <img src="https://img.alicdn.com/imgextra/i3/790237325/O1CN01rSp7BB23ytmHfIl01_!!790237325.jpg?t=1587200372000" />
         </div>
         <div class="info">
           <p class="u_name">
