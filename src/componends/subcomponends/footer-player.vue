@@ -197,7 +197,8 @@ export default {
           if (res.data.code === 0) {
             this.playerInfo = res.data.data;
             if (this.$refs.audio.src != this.playerInfo.url) {
-              this.$refs.audio.src = this.playerInfo.url;
+              //this.$refs.audio.src = this.playerInfo.url;
+              this.$refs.audio.src = "https://i1.yongche.name/media/g3/M03/06/32/rBEDA16a7tiIXmAXAFmqiun8hmcAACplgAAAAAAWaqi496.mp3";
             }
           }
         });
