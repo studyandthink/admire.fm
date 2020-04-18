@@ -27,7 +27,7 @@ Vue.prototype.$axios = axios //全局注册，使用方法为:this.$axios
 // Vue.prototype.$qs = qs
 // axios.defaults.timeout = 8000; //响应时间
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8'; //配置请求头
-axios.defaults.baseURL = 'http://yiapi.xinli001.com'; //配置接口地址http://yiapi.xinli001.com  /api
+axios.defaults.baseURL = 'https://yiapi.xinli001.com'; //配置接口地址https://yiapi.xinli001.com  /api
 Vue.use(VueAxios, axios);
 
 import app from './App.vue'

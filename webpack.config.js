@@ -21,7 +21,7 @@ let config = {
         main: path.join(__dirname, './src/main.js')
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: "[hash:6].bundle.js",
         path: path.join(__dirname, './dist')
     },
     devServer: { //启用开发服务器
