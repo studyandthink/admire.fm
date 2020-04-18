@@ -49,7 +49,9 @@ let config = {
             template: path.join(__dirname, './src/index.html'), //指定模版的页面， 会根据指定的页面路径生成内存中的页面
             inject: true, //设为 true 表示把JS文件注入到body结尾，CSS文件注入到head中；
             minify: {
-                removeComments: true  //表示删除模版中的注释
+                removeComments: true, // 移除HTML中的注释
+                collapseWhitespace: true, // 删除空白符与换行符
+                minifyCSS: true// 压缩内联css
             }
         }),
         new VueLoaderPlugin(),
