@@ -8,6 +8,8 @@ const proxy = require('http-proxy-middleware');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 //处理字体的插件
 // const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -45,12 +47,27 @@ let config = {
         new HtmlWebpackPlugin({
             //  filename: 'index.html', //指定生成页面的名称
             template: path.join(__dirname, './src/index.html'), //指定模版的页面， 会根据指定的页面路径生成内存中的页面
-            inject: true //设为 true 表示把JS文件注入到body结尾，CSS文件注入到head中；
-            // minify: {
-            //     removeComments: true  表示删除模版中的注释
-            //   }
+            inject: true, //设为 true 表示把JS文件注入到body结尾，CSS文件注入到head中；
+            minify: {
+                removeComments: true  //表示删除模版中的注释
+            }
         }),
         new VueLoaderPlugin(),
+        new UglifyJsPlugin({
+            uglifyOptions: {
+                output:{
+                    comments: false
+                },
+                compress: {
+                    warnings: false,
+                    drop_debugger: true, //debugger
+                    drop_console: true,// console
+                    pure_funcs:['console.log'] // 移除console
+                },
+            },
+            sourceMap: false,
+            parallel: true,
+        })
         // new ExtractTextPlugin({
         //     filename: "[name].min.css",
         //     allChunks: false
