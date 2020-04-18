@@ -4,7 +4,8 @@
       <h1>倾心FM</h1>
     </div>
     <div class="text_box2">
-      <h1>世界和我爱着你</h1>
+      <!--<h1>世界和我爱着你</h1>-->
+      <h1>你是我的心中挚爱</h1>
     </div>
     <div class="longBox">
       <div class="bar bar1"></div>
